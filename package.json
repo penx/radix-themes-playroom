@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@radix-ui/themes": "^2.0.1",
+    "playroom": "^0.33.0"
+  }
 }
