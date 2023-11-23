@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "playroom:start": "playroom start",
+    "playroom:build": "playroom build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@radix-ui/themes": "^2.0.1",
-    "playroom": "^0.33.0"
+    "playroom": "^0.34.0",
+    "style-loader": "^3.3.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.2"
   }
 }
