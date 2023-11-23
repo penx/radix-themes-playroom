@@ -1,3 +1,5 @@
+export * from "@radix-ui/react-icons";
+
 export { Theme } from "@radix-ui/themes";
 
 export { Box } from "@radix-ui/themes";
