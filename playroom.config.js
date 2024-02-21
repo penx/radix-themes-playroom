@@ -1,5 +1,5 @@
 module.exports = {
-  components: "./components.ts",
+  components: "./components.cjs",
   snippets: "./snippets.ts",
   themes: "./themes.ts",
   frameComponent: "./frame.tsx",
