@@ -2,7 +2,7 @@ module.exports = {
   components: "./components.cjs",
   snippets: "./snippets.ts",
   themes: "./themes.ts",
-  frameComponent: "./frame.tsx",
+  frameComponent: "./frame.cjsx",
   outputPath: "./dist",
   widths: [320, 768, 1024],
   exampleCode: `<Container size="1">
@@ -42,6 +42,22 @@ module.exports = {
                   "@babel/preset-env",
                   ["@babel/preset-react", { runtime: "automatic" }],
                   "@babel/preset-typescript",
+                ],
+              },
+            },
+          ],
+        },
+        {
+          test: /\.c?jsx?$/,
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: "babel-loader",
+              options: {
+                babelrc: false,
+                presets: [
+                  "@babel/preset-env",
+                  ["@babel/preset-react", { runtime: "automatic" }],
                 ],
               },
             },

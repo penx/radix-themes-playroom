@@ -1,15 +1,9 @@
-import React from "react";
-import { Box, Theme } from "@radix-ui/themes";
+const React = require("react");
+const { Box, Theme } = require("@radix-ui/themes");
 
-import "./frame.css";
+require("./frame.css");
 
-export default function FrameComponent({
-  theme,
-  children,
-}: {
-  theme: React.ComponentProps<typeof Theme>;
-  children: React.ReactNode;
-}) {
+export default function FrameComponent({ theme, children }) {
   if (theme.appearance && ["light", "dark"].includes(theme.appearance)) {
     if (!document.documentElement.classList.contains(theme.appearance)) {
       document.documentElement.classList.remove("light", "dark");
