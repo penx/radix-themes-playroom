@@ -1,6 +1,6 @@
-import type { ThemeOptions } from "@radix-ui/themes";
+import { Theme } from "@radix-ui/themes";
 
-export const Light: ThemeOptions = {
+export const Light: React.ComponentProps<typeof Theme> = {
   accentColor: "blue",
   appearance: "light",
   grayColor: "auto",
@@ -9,7 +9,7 @@ export const Light: ThemeOptions = {
   scaling: "100%",
 };
 
-export const Dark: ThemeOptions = {
+export const Dark: React.ComponentProps<typeof Theme> = {
   ...Light,
   appearance: "dark",
 };
